@@ -1,5 +1,3 @@
 
 
-
-draw_text(100,100,string(obj_player.phasing));
-draw_text(100,200,string(obj_player.onground));
+draw_text(10,50,"Onground: " + string(obj_player.onground));

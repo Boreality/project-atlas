@@ -4,6 +4,7 @@
 key_left = keyboard_check_direct(ord("A"));
 key_right = keyboard_check_direct(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
+key_interact = keyboard_check_pressed(ord("E"));
 key_slide = keyboard_check_pressed(vk_shift);
 
 
@@ -45,8 +46,24 @@ vsp_frac = frac(vsp);
 hsp -= hsp_frac;
 vsp -= vsp_frac;
 
+
+//Bbox collision
+var bbox_side;
+if(hsp > 0) bbox_side = bbox_right; else  bbox_side = bbox_left;
+var check_top = tilemap_get_at_pixel(tilemap,bbox_side + hsp, bbox_top);
+var check_bottom = tilemap_get_at_pixel(tilemap,bbox_side + hsp, bbox_bottom)
+
+
+if(check_top != 0) or (check_bottom != 0)
+//{
+//	if(hsp > 0) x = x - (x % 32) + 31;
+	
+//}
+
+
+
 //Horizontal collision
-if(place_meeting(x + hsp,y,obj_wall)) && (!phasing)
+if(place_meeting(x + hsp,y,obj_wall))
 {
 	
 	var onepixel = sign(hsp);

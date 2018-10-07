@@ -22,4 +22,10 @@ grv = 0.4;
 jumpbuffer = 0;
 
 
-phasing = false;
+//Tile collisions
+tilemap = layer_tilemap_get_id("Collision");
+
+
+
+
+
