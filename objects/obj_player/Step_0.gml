@@ -46,8 +46,9 @@ hsp -= hsp_frac;
 vsp -= vsp_frac;
 
 //Horizontal collision
-if(place_meeting(x + hsp,y,obj_wall))
+if(place_meeting(x + hsp,y,obj_wall)) && (!phasing)
 {
+	
 	var onepixel = sign(hsp);
 	while (!place_meeting(x+onepixel,y,obj_wall)) x += onepixel;
 	hsp = 0;
@@ -57,12 +58,17 @@ if(place_meeting(x + hsp,y,obj_wall))
 x += hsp;
 
 //Vertical Collision
-if(place_meeting(x,y + vsp, obj_wall))
+if(!place_meeting(x,y, obj_wall))
 {
-	var onepixel = sign(vsp);
-	while (!place_meeting(x,y+onepixel,obj_wall)) y += onepixel;
-	vsp = 0;
-	vsp_frac = 0;	
+	mask_index = spr_player_bottom;
+	if(place_meeting(x,y + vsp, obj_wall))
+	{
+		var onepixel = sign(vsp);
+		while (!place_meeting(x,y+onepixel,obj_wall)) y += onepixel;
+		vsp = 0;
+		vsp_frac = 0;	
+	}
+	mask_index = spr_player;
 }
 //Vertical Move
 y += vsp;
@@ -76,11 +82,14 @@ if(onground) jumpbuffer = 6;
 if(hsp != 0) image_xscale = sign(hsp);
 if(!onground)
 {
+	sprite_index = spr_player_air;
+	image_speed = 0;
+	if(vsp >= 0) image_index = 1; else image_index = 0;
 	
 }
 else
 {
-	//if(hsp != 0) sprite_index = spr_player_run; else sprite_index = spr_player
+	if(hsp != 0) sprite_index = spr_player_run; else sprite_index = spr_player
 }
 
 

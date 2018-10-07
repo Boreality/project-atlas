@@ -12,13 +12,14 @@ hsp_fric_air = 0.35;
 hsp_walk = 4;
 
 
-vsp_jump = -6;
+vsp_jump = -10;
 vsp_max = 10;
 
 onground = false;
 
-grv = 0.3;
+grv = 0.4;
 
 jumpbuffer = 0;
 
 
+phasing = false;
