@@ -77,6 +77,7 @@ x += hsp;
 //Vertical Collision
 if(!place_meeting(x,y, obj_wall))
 {
+	
 	mask_index = spr_player_bottom;
 	if(place_meeting(x,y + vsp, obj_wall))
 	{
@@ -84,6 +85,7 @@ if(!place_meeting(x,y, obj_wall))
 		while (!place_meeting(x,y+onepixel,obj_wall)) y += onepixel;
 		vsp = 0;
 		vsp_frac = 0;	
+		
 	}
 	mask_index = spr_player;
 }
