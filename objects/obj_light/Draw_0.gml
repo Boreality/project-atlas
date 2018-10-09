@@ -3,7 +3,7 @@
 if(surface_exists(surf)){	
 	shader_set(sh_dyn_lighting);
 	shader_set_uniform_f( LightPosRadius, lx,ly,rad,0.5 );
-	draw_surface_ext(surf,0,0,1,1,0,image_blend,0.5);
+	draw_surface_ext(surf,0,0,1,1,0,image_blend,0.8);
 	shader_reset();
 }
 
