@@ -5,6 +5,9 @@ if(place_meeting(x,y,obj_player)){
 	//If havent already made textbox, make one
 	if(obj_player.key_interact)
 	{
+		if(obj_player.x < x){
+			image_xscale = -1;	
+		} else image_xscale = 1;
 		if(my_textbox == noone){
 			my_textbox = instance_create_layer(x - middleTextBox,y - (npcHeight * 3),"Text",obj_textbox);
 			my_textbox.text = my_text;
