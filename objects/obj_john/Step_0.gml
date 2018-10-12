@@ -3,6 +3,9 @@ var middleTextBox = (sprite_get_width(spr_textbox) /2)
 var npcHeight = sprite_get_height(spr_john);
 
 if(place_meeting(x,y,obj_player)){
+	//interact
+	colliding = true;
+	//instance_create_layer(obj_player.x,obj_player.y -50, "GUI",obj_interact);
 	//If havent already made textbox, make one
 	if(obj_player.key_interact)
 	{
@@ -18,7 +21,7 @@ else{
 		instance_destroy(my_textbox);
 		my_textbox = noone;
 	}
-	
+	colliding = false;
 }
 
 

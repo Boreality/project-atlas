@@ -9,6 +9,7 @@ startx = floor((lx-rad)/tile_size);
 endx = floor((lx+rad)/tile_size);
 starty = floor((ly-rad)/tile_size);
 endy = floor((ly+rad)/tile_size);
+color = image_blend;
 
 //Vertex buffer
 vertex_format_begin();

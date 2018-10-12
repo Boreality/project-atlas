@@ -3,6 +3,7 @@ var npcHeight = sprite_get_height(spr_john);
 
 if(place_meeting(x,y,obj_player)){
 	//If havent already made textbox, make one
+	colliding = true;
 	if(obj_player.key_interact)
 	{
 		if(obj_player.x < x){
@@ -20,7 +21,7 @@ else{
 		instance_destroy(my_textbox);
 		my_textbox = noone;
 	}
-	
+	colliding = false;
 }
 
 

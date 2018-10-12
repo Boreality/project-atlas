@@ -1,4 +1,4 @@
-
+colliding = false;
 my_textbox = noone;
 
 my_text[0] = "Hi, I'm Susan!";
