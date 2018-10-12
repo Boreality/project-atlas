@@ -108,7 +108,12 @@ if(!onground)
 }
 else
 {
-	if(hsp != 0) sprite_index = spr_player_run; else sprite_index = spr_player
+	if(hsp != 0)
+	{
+		sprite_index = spr_player_run;
+		if(onground) image_speed = 3;
+	}
+	else sprite_index = spr_player;
 }
 
 
