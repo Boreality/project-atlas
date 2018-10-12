@@ -6,34 +6,34 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 63,
-    "bbox_left": 0,
-    "bbox_right": 63,
-    "bbox_top": 0,
+    "bbox_bottom": 60,
+    "bbox_left": 15,
+    "bbox_right": 45,
+    "bbox_top": 3,
     "bboxmode": 2,
     "colkind": 1,
     "coltolerance": 0,
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "b2456e58-fcad-457a-b2f6-24170af5acc4",
+            "id": "e3f207aa-9086-4203-bb81-3479082960ef",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "da7bcbdf-ba17-4f78-b776-6554ca387813",
             "compositeImage": {
-                "id": "5e10c3a0-670c-48bc-9972-2d7128bab5cd",
+                "id": "a5e60d70-78ff-4958-ba49-58dd0b3837c5",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "b2456e58-fcad-457a-b2f6-24170af5acc4",
+                "FrameId": "e3f207aa-9086-4203-bb81-3479082960ef",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "efad05f2-f565-47c8-b7e5-ac118be8156f",
+                    "id": "5c0b9f8a-2b22-457c-a6e4-94fd5b200296",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "b2456e58-fcad-457a-b2f6-24170af5acc4",
-                    "LayerId": "063910c8-4826-4735-a26e-fe0ac89cb354"
+                    "FrameId": "e3f207aa-9086-4203-bb81-3479082960ef",
+                    "LayerId": "0e581ca3-f021-4e21-814b-b81731fecb5f"
                 }
             ]
         }
@@ -43,13 +43,13 @@
     "height": 64,
     "layers": [
         {
-            "id": "063910c8-4826-4735-a26e-fe0ac89cb354",
+            "id": "0e581ca3-f021-4e21-814b-b81731fecb5f",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "da7bcbdf-ba17-4f78-b776-6554ca387813",
             "blendMode": 0,
             "isLocked": false,
-            "name": "default",
+            "name": "Layer 1 (2)",
             "opacity": 100,
             "visible": true
         }
