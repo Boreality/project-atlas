@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "05f45194-b3c6-423e-9766-4bf32a6976ff",
+            "Value": {
+                "id": "b3a94cbd-baac-434f-964e-3e03fbe46a9b",
+                "resourcePath": "objects\\object11\\object11.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0dd8f3e2-dc04-4d52-a397-88b4e3622f8b",
             "Value": {
                 "id": "01a88b15-bebe-41ae-b8ff-7aac2fb6294e",
@@ -76,6 +84,14 @@
                 "id": "54f42025-2067-4410-9620-08c7b039e19e",
                 "resourcePath": "sprites\\spr_reg_tile\\spr_reg_tile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "14a79b4f-93dc-4c42-a799-d99800f5973e",
+            "Value": {
+                "id": "bd394454-f08d-49ca-b092-bcfa769398c1",
+                "resourcePath": "objects\\object14\\object14.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -255,6 +271,22 @@
             }
         },
         {
+            "Key": "69841ccd-5d1b-4c7c-bff3-92287c0d3614",
+            "Value": {
+                "id": "73ca4491-8191-48cd-9137-9bd6af2622da",
+                "resourcePath": "objects\\object13\\object13.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6b5cabce-63d2-4cca-a242-d41810409b1b",
+            "Value": {
+                "id": "5872a178-c56c-4cb7-bd1e-cf9010e0856a",
+                "resourcePath": "objects\\object15\\object15.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6c6bc1fa-0d53-4d8d-ab01-c160d645d6a6",
             "Value": {
                 "id": "061a9c38-d111-4a78-bfee-cdabfdc4bb99",
@@ -284,6 +316,14 @@
                 "id": "52ea917b-4abb-4d23-9255-ffc9da660715",
                 "resourcePath": "views\\7bebe54f-dacb-4504-9099-b7b96f8c9a16.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "802c52ae-6182-4620-98cf-aef9f460c954",
+            "Value": {
+                "id": "94818ade-0b1f-42e5-a1c5-1b0bf3c205d5",
+                "resourcePath": "objects\\object12\\object12.yy",
+                "resourceType": "GMObject"
             }
         },
         {
