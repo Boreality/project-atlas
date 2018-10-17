@@ -6,7 +6,7 @@ key_right = keyboard_check_direct(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
 key_interact = keyboard_check_pressed(ord("E"));
 key_slide = keyboard_check_pressed(vk_shift);
-
+key_jump_hold = keyboard_check(vk_space);
 
 //Calculate horizontal movement
 var dir = key_right - key_left;
@@ -20,7 +20,22 @@ if(dir == 0)
 hsp = clamp(hsp,-hsp_walk,hsp_walk);
 
 //Calc vertical movement
-vsp += grv;
+if(!umbrella) //normal
+{	
+	vsp += grv;
+	air_check = true;
+}
+else
+{
+	if(air_check)
+	{
+		vsp = 1;	
+		air_check = false;
+	}
+	
+	vsp += 0.02;	
+	
+}
 
 //Ground Jump
 
@@ -92,10 +107,22 @@ if(!place_meeting(x,y, obj_wall))
 //Vertical Move
 y += vsp;
 
+//Umbrella
+if(!onground) && (key_jump_hold) && (vsp > 0)
+{
+	umbrella = true;
+	//show_message("temp");
+	grv = 0.1;	
+} else {
+	grv = 0.3;
+	umbrella = false;
+}
+
+
+
 //Calc current status
 onground = place_meeting(x,y+1,obj_wall)
 if(onground) jumpbuffer = 6;
-
 
 //Adjust Sprite
 if(hsp != 0) image_xscale = sign(hsp);
@@ -104,7 +131,6 @@ if(!onground)
 	sprite_index = spr_player_air;
 	image_speed = 0;
 	if(vsp >= 0) image_index = 1; else image_index = 0;
-	
 }
 else
 {

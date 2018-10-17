@@ -1,3 +1,3 @@
-
-
-draw_text(10,50,"Onground: " + string(obj_player.onground));
+draw_text(50,50,string(obj_player.vsp));
+draw_text(50,80,string(obj_player.umbrella));
+draw_text(50,120,"Project Atlas, a game by Boreality");

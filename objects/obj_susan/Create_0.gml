@@ -7,3 +7,4 @@ my_text[2] = "Oh, and between you and me;"
 my_text[3] = "I think John's up to something";
 
 
+name = "Susan";

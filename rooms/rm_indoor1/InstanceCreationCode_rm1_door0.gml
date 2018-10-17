@@ -1,0 +1,1 @@
+init_door(room0,rm0_door0);

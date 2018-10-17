@@ -6,3 +6,4 @@ my_text[1] = "...";
 my_text[2] = "I can't see a thing through these shades dude";
 
 
+name = "Cool lad";

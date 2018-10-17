@@ -17,3 +17,10 @@ shake_magnitude = 0;	//How intense it is
 shake_remain = 0;	//Timer 
 shake_buff = 64;
 
+
+if(room != rm_menu)
+{
+	x = global.target.x;
+	y = global.target.y;
+}
+
