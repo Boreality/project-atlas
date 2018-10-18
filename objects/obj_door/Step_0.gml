@@ -1,4 +1,4 @@
-if(player_collide)
+if(place_meeting(x+10,y,obj_player)) or (place_meeting(x-10,y,obj_player))
 {
 	draw_interact();
 	if(interact)
@@ -7,7 +7,5 @@ if(player_collide)
 		else image_index = 1;
 		
 	}
-
-
 
 }

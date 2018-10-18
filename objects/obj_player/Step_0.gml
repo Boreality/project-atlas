@@ -90,10 +90,13 @@ if(place_meeting(x + hsp,y,obj_wall))
 if(place_meeting(x + hsp,y,obj_door))
 {
 	
-	var onepixel = sign(hsp);
-	while (!place_meeting(x+onepixel,y,obj_door)) x += onepixel;
-	hsp = 0;
-	hsp_frac = 0;
+	if(other.image_index == 0)
+	{
+		var onepixel = sign(hsp);
+		while (!place_meeting(x+onepixel,y,obj_door)) x += onepixel;
+		hsp = 0;
+		hsp_frac = 0;
+	}
 }
 //Horizontal move
 x += hsp;
