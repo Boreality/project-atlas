@@ -33,7 +33,7 @@ else
 		air_check = false;
 	}
 	
-	vsp += 0.02;	
+	//vsp += 0.02;	
 	
 }
 
@@ -86,6 +86,15 @@ if(place_meeting(x + hsp,y,obj_wall))
 	hsp = 0;
 	hsp_frac = 0;
 }
+
+if(place_meeting(x + hsp,y,obj_door))
+{
+	
+	var onepixel = sign(hsp);
+	while (!place_meeting(x+onepixel,y,obj_door)) x += onepixel;
+	hsp = 0;
+	hsp_frac = 0;
+}
 //Horizontal move
 x += hsp;
 
@@ -112,9 +121,9 @@ if(!onground) && (key_jump_hold) && (vsp > 0)
 {
 	umbrella = true;
 	//show_message("temp");
-	grv = 0.1;	
+//	grv = 0.1;	
 } else {
-	grv = 0.3;
+//	grv = 0.3;
 	umbrella = false;
 }
 
@@ -127,10 +136,18 @@ if(onground) jumpbuffer = 6;
 //Adjust Sprite
 if(hsp != 0) image_xscale = sign(hsp);
 if(!onground)
-{
-	sprite_index = spr_player_air;
+{	
+	if(umbrella)
+	{
+		sprite_index = spr_player_hover;
+	}
+	else
+	{
+		sprite_index = spr_player_air;
+		if(vsp >= 0) image_index = 1; else image_index = 0;
+	}
 	image_speed = 0;
-	if(vsp >= 0) image_index = 1; else image_index = 0;
+	
 }
 else
 {
