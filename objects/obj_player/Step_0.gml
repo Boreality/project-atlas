@@ -3,6 +3,7 @@
 //Input
 key_left = keyboard_check_direct(ord("A"));
 key_right = keyboard_check_direct(ord("D"));
+key_down = keyboard_check_direct(ord("S"));
 key_jump = keyboard_check_pressed(vk_space);
 key_interact = keyboard_check_pressed(ord("E"));
 key_slide = keyboard_check_pressed(vk_shift);
@@ -44,7 +45,6 @@ if(jumpbuffer > 0)
 	jumpbuffer--;
 	if(key_jump)
 	{
-	
 		jumpbuffer = 0;
 		vsp = vsp_jump;
 		vsp_frac = 0;
@@ -62,18 +62,18 @@ hsp -= hsp_frac;
 vsp -= vsp_frac;
 
 
-//Bbox collision
-var bbox_side;
-if(hsp > 0) bbox_side = bbox_right; else  bbox_side = bbox_left;
-var check_top = tilemap_get_at_pixel(tilemap,bbox_side + hsp, bbox_top);
-var check_bottom = tilemap_get_at_pixel(tilemap,bbox_side + hsp, bbox_bottom)
+////Bbox collision
+//var bbox_side;
+//if(hsp > 0) bbox_side = bbox_right; else  bbox_side = bbox_left;
+//var check_top = tilemap_get_at_pixel(tilemap,bbox_side + hsp, bbox_top);
+//var check_bottom = tilemap_get_at_pixel(tilemap,bbox_side + hsp, bbox_bottom)
 
 
-if(check_top != 0) or (check_bottom != 0)
-//{
-//	if(hsp > 0) x = x - (x % 32) + 31;
+//if(check_top != 0) or (check_bottom != 0)
+////{
+////	if(hsp > 0) x = x - (x % 32) + 31;
 	
-//}
+////}
 
 
 
@@ -102,19 +102,12 @@ if(place_meeting(x + hsp,y,obj_door))
 x += hsp;
 
 //Vertical Collision
-if(!place_meeting(x,y, obj_wall))
+if(place_meeting(x,y + vsp, obj_wall))
 {
-	
-	mask_index = spr_player_bottom;
-	if(place_meeting(x,y + vsp, obj_wall))
-	{
-		var onepixel = sign(vsp);
-		while (!place_meeting(x,y+onepixel,obj_wall)) y += onepixel;
-		vsp = 0;
-		vsp_frac = 0;	
-		
-	}
-	mask_index = spr_player;
+	var onepixel = sign(vsp);
+	while (!place_meeting(x,y+onepixel,obj_wall)) y += onepixel;
+	vsp = 0;
+	vsp_frac = 0;	
 }
 //Vertical Move
 y += vsp;
@@ -123,16 +116,16 @@ y += vsp;
 if(!onground) && (key_jump_hold) && (vsp > 0)
 {
 	umbrella = true;
-	//show_message("temp");
-//	grv = 0.1;	
+
 } else {
-//	grv = 0.3;
+
 	umbrella = false;
 }
 
 
 
 //Calc current status
+
 onground = place_meeting(x,y+1,obj_wall)
 if(onground) jumpbuffer = 6;
 

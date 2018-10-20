@@ -1,5 +1,6 @@
 
 //Macros
+#macro SAVEFILE "Save.sav"
 #macro player_collide place_meeting(x,y,obj_player)
 #macro interact obj_player.key_interact
 
