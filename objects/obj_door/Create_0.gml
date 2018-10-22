@@ -1,44 +1,20 @@
 /// @desc Setting variables, is backdrop side
 image_speed = 0;
-
+doorstage = 0;
 enum doorstage {
     open,
     opening,
     close,
     closing
 }
+doorstage = doorstage.close;
+top = 0;
+bottom = 0;
 
 
-
-switch(doorstage)
-{
-    case doorstage.open:
-        //Set where the door sprites should be
-        top.y = backdrop_top;
-        bottom.y = backdrop_bottom;
-    break;
-    case doorstage.opening:
-        //USing apporach move towards the centre
-        Approach(top.y,backdrop_top,opening_speed);
-        Approach(bottom.y,backdrop_bottom,opening_speed);
-    break;    
-    case doorstage.close:
-      //Set where the door sprites should be
-        top.y = backdrop_midpoint;
-        bottom.y = backdrop_midpoint;
-    break;
-
-    case doorstage.closing:
-        //using approach move towards the top and bottom
-        Approach(top.y,backdrop_midpoint,opening_speed);
-        Approach(bottom.y,backdrop_midpoint,opening_speed);
-     
-    break;
-
-}
-backdrop_midpoint = bbox_bottom + (sprite_get_height(OWN SPRITE)/2);
-backdrop_top = bbox_top + (sprite_get_height(OWN SPRITE)/10);
-backdrop_bottom = bbox_bottom + (sprite_get_height(OWN SPRITE)/10));
+backdrop_midpoint = bbox_bottom + (sprite_get_height(spr_door_backdrop)/2);
+backdrop_top = bbox_top + (sprite_get_height(spr_door_backdrop)/10);
+backdrop_bottom = bbox_bottom + (sprite_get_height(spr_door_backdrop)/10);
 opening_speed = 2;
 
 /*

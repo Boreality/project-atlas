@@ -519,6 +519,14 @@
             }
         },
         {
+            "Key": "a1172fd1-cef3-4978-a482-ad5b590a59f8",
+            "Value": {
+                "id": "7cb66cf7-58fd-4759-9123-7a77639c4dd8",
+                "resourcePath": "objects\\obj_door_platform\\obj_door_platform.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a19555cd-fecd-4501-893e-bea7d64a08c9",
             "Value": {
                 "id": "7efa106c-0e2b-4c9e-a0dd-be4b4f1fc812",
@@ -571,6 +579,14 @@
             "Value": {
                 "id": "e06db320-9b3e-4d47-a738-0f917e10f2b3",
                 "resourcePath": "sprites\\spr_Light\\spr_Light.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "be246f9e-8ac3-48aa-9126-b30149e4717e",
+            "Value": {
+                "id": "09481caf-7f32-45fd-a93a-c9674893ae36",
+                "resourcePath": "sprites\\spr_door_backdrop\\spr_door_backdrop.yy",
                 "resourceType": "GMSprite"
             }
         },
