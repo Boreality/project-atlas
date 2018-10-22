@@ -155,4 +155,7 @@ else
 	else sprite_index = spr_player;
 }
 
+//Weather
+effect_create_below(ef_rain,0,0,1,c_blue);
+//if(key_interact) effect_create_above(ef_explosion,x,y,10,c_gray);
 
