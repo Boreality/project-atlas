@@ -207,14 +207,6 @@
             }
         },
         {
-            "Key": "3e94b7f6-0f02-473f-b94b-12c08a954bd6",
-            "Value": {
-                "id": "8526088a-213e-4ca9-a74a-26d50f89033c",
-                "resourcePath": "objects\\obj_initialize\\obj_initialize.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "3ee8de25-25aa-42af-b451-48dacd817103",
             "Value": {
                 "id": "c6b03057-4991-4301-b2ae-4db8130b3214",
@@ -292,6 +284,14 @@
                 "id": "27848837-0f64-4a2a-a967-5561dcf4ff25",
                 "resourcePath": "views\\5c041af1-3e55-4acf-ae32-daa906eb122f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5d667818-fdf5-474b-9bc8-5a755d1c2ba8",
+            "Value": {
+                "id": "27a84b4f-921e-41c0-bc83-b60a2459cf1d",
+                "resourcePath": "rooms\\room7\\room7.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -708,6 +708,14 @@
                 "id": "e31fb9ed-244e-4b60-a0ea-460d855bfa1c",
                 "resourcePath": "tilesets\\Foreground\\Foreground.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "e8fb789a-e2e4-46a3-9188-6b5775a59796",
+            "Value": {
+                "id": "4db9b048-ea6e-4535-aecb-0fd3ea8c8cdd",
+                "resourcePath": "objects\\obj_initialize_\\obj_initialize_.yy",
+                "resourceType": "GMObject"
             }
         },
         {

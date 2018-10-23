@@ -1,9 +1,9 @@
 
-top = instance_create_layer(x,y,"NPC",obj_door_platform);
-below = instance_create_layer(x,y,"NPC",obj_door_platform);
+top = instance_create_layer(id.x,y,"NPC",obj_door_platform);
+below = instance_create_layer(id.x,y,"NPC",obj_door_platform);
 top.direction = 180;
 
-if(place_meeting(x+10,y,obj_player)) or (place_meeting(x-10,y,obj_player))
+if(player_collide)
 {
 	draw_interact();
 	if(interact)
@@ -32,6 +32,7 @@ switch(doorstage)
       //Set where the door sprites should be
         top.y = backdrop_midpoint;
         bottom.y = backdrop_midpoint;
+		
     break;
 
     case doorstage.closing:

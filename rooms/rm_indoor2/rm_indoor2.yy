@@ -9,7 +9,6 @@
     "instanceCreationOrderIDs": [
         "96807bde-f7ca-42de-b85c-c727ff8a3a6c",
         "7e25b949-c7c4-4cba-b25e-d5f036b48f65",
-        "483cb577-634f-40a5-99c2-bdb9f85d69c2",
         "78df2490-ed81-4211-b195-8a1a86cb7874",
         "bc728fb3-1018-4676-a329-aea0f7cd4673",
         "0e15e28a-65d7-43a0-8149-7567d4c0b184",
@@ -90,7 +89,6 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_3AD0491D","id": "483cb577-634f-40a5-99c2-bdb9f85d69c2","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_3AD0491D","objId": "3e94b7f6-0f02-473f-b94b-12c08a954bd6","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1184,"y": -160},
 {"name": "inst_1A8F02C9","id": "487eb20f-db91-40d3-bb74-ec89e80677c3","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1A8F02C9","objId": "fbc4a26b-b66f-428e-95ed-5dcc0da35cc6","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 92,"y": 12},
 {"name": "inst_62CD0E3E","id": "e0178f4d-1902-43cd-9c18-8280f3e4ee30","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_62CD0E3E","objId": "fbc4a26b-b66f-428e-95ed-5dcc0da35cc6","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 363,"y": 13}
             ],

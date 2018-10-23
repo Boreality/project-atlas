@@ -9,7 +9,6 @@
     "instanceCreationOrderIDs": [
         "5c46066f-5803-4675-ad47-7e15e87e6640",
         "a3773787-a36e-44f2-b271-196582019449",
-        "744c9096-e142-42ac-a4cb-ab506d5d8178",
         "a757af48-8435-4329-9fca-3f62b7c2da2d",
         "95ed023e-d453-4332-95a3-a09ffb495e32",
         "38dff3ba-a2ca-45b0-8339-fcd752e3d125",
@@ -90,7 +89,6 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_3AF000C3","id": "744c9096-e142-42ac-a4cb-ab506d5d8178","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_3AF000C3","objId": "3e94b7f6-0f02-473f-b94b-12c08a954bd6","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1184,"y": -160},
 {"name": "inst_7275E7EE","id": "9b312b83-8273-408a-a844-594d33ddf536","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7275E7EE","objId": "fbc4a26b-b66f-428e-95ed-5dcc0da35cc6","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 92,"y": 12},
 {"name": "inst_A03D98E","id": "17f7576f-8da0-45a2-941a-37e525131f4e","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_A03D98E","objId": "fbc4a26b-b66f-428e-95ed-5dcc0da35cc6","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 363,"y": 13}
             ],
